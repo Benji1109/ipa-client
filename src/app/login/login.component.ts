@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 	templateUrl: "./login.component.html"
 })
 export class LoginComponent implements OnInit {
-	private url = 'http://localhost:3000';
+	private url = 'https://sleepy-lowlands-43655.herokuapp.com';
 
 	public loginForm: FormGroup;
 	public error: string;

@@ -1,3 +1,8 @@
+# Deployed client and server host:
+
+Client: https://ipa-client.firebaseapp.com/(login|register|chat)
+Server: https://sleepy-lowlands-43655.herokuapp.com/ (login|register)
+
 # Chat
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
