@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+//@import "~material-icons/iconfont/material-icons.css";
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700|Material+Icons");
+@import "~@angular/material/theming";
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~angular-notifier/styles.css";
+
+.mat-toolbar{
+	height: auto!important;
+}
+.mat-sidenav-content{
+	overflow: hidden!important;
+}
+.send {
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	align-self: center;
+	input {
+		width: 100%;
+	}
+}
+.info {
+	height: 500px;
+}
+.messeages {
+	background-color: white;
+	padding: 20px 20px 10px 20px;
+	height: 420px;
+	overflow: auto;
+}
+body {
+	background: cadetblue !important;
+	margin-top: 150px;
+}
+html {
+	background: cadetblue !important;
+}
+.container {
+	margin-top: 150px;
+	-webkit-box-shadow: 7px 12px 30px 24px rgba(0, 0, 0, 0.38);
+	-moz-box-shadow: 7px 12px 30px 24px rgba(0, 0, 0, 0.38);
+	box-shadow: 7px 12px 30px 24px rgba(0, 0, 0, 0.38);
+}
+.channels {
+	padding: 15px;
+	.mat-button {
+		width: 100%;
+		color: white;
+	}
+	.user-name {
+		border-radius: 25px;
+		text-align: center;
+	}
+}

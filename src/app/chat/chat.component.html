@@ -1,0 +1,65 @@
+<notifier-container></notifier-container>
+<div class="container">
+	<mat-toolbar>
+		<div class="col-12 d-flex flex-wrap align-items-center">
+			<div class="p-2">
+				<button mat-icon-button (click)="snav.toggle()">
+					<mat-icon>menu</mat-icon>
+				</button>
+			</div>
+			<div class="user-name p-2">
+				Channels
+			</div>
+
+			<div class="user-name p-2 ml-auto">
+				Username: {{ uuid }}
+			</div>
+		</div>
+	</mat-toolbar>
+
+	<mat-sidenav-container>
+		<mat-sidenav #snav>
+			<mat-nav-list>
+				<a mat-list-item *ngFor="let channel of channels">
+					<button
+						mat-button
+						(click)="joinRoom(channel)"
+						disabled="{{ channelName === channel }}"
+					>
+						{{ channel }}
+					</button>
+				</a>
+			</mat-nav-list>
+		</mat-sidenav>
+
+		<mat-sidenav-content class="p-4">
+			<div class="row info">
+				<div class="col-12 messeages">
+					<div *ngFor="let message of messages">
+						<span matTooltip="{{ message.info }}">
+							<strong>{{ message.user }}: </strong>
+							{{ message.messeage }}
+						</span>
+					</div>
+				</div>
+				<div class="col-10 offset-1 row send d-flex">
+					<div class="col-10 w-75">
+						<input
+							[(ngModel)]="message"
+							(keyup)="$event.keyCode == 13 && sendMessage()"
+						/>
+					</div>
+					<div class="col-2">
+						<button
+							class="w-75"
+							mat-button
+							(click)="sendMessage()"
+						>
+							Send
+						</button>
+					</div>
+				</div>
+			</div>
+		</mat-sidenav-content>
+	</mat-sidenav-container>
+</div>
