@@ -1,6 +1,6 @@
 # Deployed client and server host:
 
-Client: https://ipa-client.firebaseapp.com/(login|register|chat)
+Client: https://ipa-client.firebaseapp.com/login (login|register|chat)
 Server: https://sleepy-lowlands-43655.herokuapp.com/ (login|register)
 
 # Chat
